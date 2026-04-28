@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: docker-android
+Version: 0.1
+Summary: CLI for docker-android
+Home-page: https://github.com/budtmo/docker-android
+Author: Budi Utomo
+Author-email: budtmo.os@gmail.com
+Requires-Dist: autopep8==2.3.2
+Requires-Dist: click==8.3.1
+Requires-Dist: coverage==7.13.5
+Requires-Dist: mock==5.2.0
+Requires-Dist: pytest==9.0.2
+Requires-Dist: pytest-cov==7.1.0
+Requires-Dist: pytest-xdist==3.8.0
+Requires-Dist: requests==2.33.1
+Requires-Dist: setuptools==82.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
