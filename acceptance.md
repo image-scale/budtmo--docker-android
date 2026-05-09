@@ -35,13 +35,28 @@
 ## Task 3: Genymotion SaaS integration
 
 ### Acceptance Criteria
-- [ ] Login with auth token calls the correct gmsaas auth token command
-- [ ] Login with user/password calls the correct gmsaas auth login command
-- [ ] Reading template from valid JSON file returns device configuration
-- [ ] Reading template from missing file raises RuntimeError
-- [ ] Creating instance from template starts the device via gmsaas
-- [ ] Missing template parameter raises RuntimeError
-- [ ] Auto-generates name when not specified using UUID
-- [ ] Connects to instance ADB after creation
-- [ ] Shutdown stops all created instances
-- [ ] Logout resets auth when token was used, calls logout otherwise
+- [x] Login with auth token calls the correct gmsaas auth token command
+- [x] Login with user/password calls the correct gmsaas auth login command
+- [x] Reading template from valid JSON file returns device configuration
+- [x] Reading template from missing file raises RuntimeError
+- [x] Creating instance from template starts the device via gmsaas
+- [x] Missing template parameter raises RuntimeError
+- [x] Auto-generates name when not specified using UUID
+- [x] Connects to instance ADB after creation
+- [x] Shutdown stops all created instances
+- [x] Logout resets auth when token was used, calls logout otherwise
+
+## Task 4: Genymotion AWS integration
+
+### Acceptance Criteria
+- [ ] Uses existing AWS credentials directory when present
+- [ ] Creates credentials from template when directory doesn't exist
+- [ ] Replaces placeholders in credentials template with actual keys
+- [ ] Generates SSH key pair for instance access
+- [ ] Generates Terraform configuration with security group from template
+- [ ] Generates Terraform configuration with custom ingress/egress rules
+- [ ] Assigns unique ADB ports to each created device
+- [ ] Runs terraform init, plan, and apply to deploy infrastructure
+- [ ] Creates SSH tunnel for ADB connection to each device
+- [ ] Destroys terraform resources on shutdown
+- [ ] Cleans up temporary credentials on logout
