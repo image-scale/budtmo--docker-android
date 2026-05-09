@@ -64,8 +64,23 @@
 ## Task 5: Application process manager
 
 ### Acceptance Criteria
-- [ ] Creates application with name, command, and optional args
-- [ ] Starts application without UI by executing command directly
-- [ ] Starts application with UI by wrapping in xterm
-- [ ] Application can represent different service types (Appium, VNC, etc.)
-- [ ] String representation includes all configuration details
+- [x] Creates application with name, command, and optional args
+- [x] Starts application without UI by executing command directly
+- [x] Starts application with UI by wrapping in xterm
+- [x] Application can represent different service types (Appium, VNC, etc.)
+- [x] String representation includes all configuration details
+
+## Task 6: Main CLI with Click commands
+
+### Acceptance Criteria
+- [ ] CLI provides a start command group with service choices
+- [ ] Starting Appium service reads config from environment and starts the process
+- [ ] Starting device creates and runs the appropriate device type based on environment
+- [ ] Starting display screen configures Xvfb with screen settings from environment
+- [ ] Starting display window manager runs openbox session
+- [ ] Starting port forwarder sets up socat tunnels for emulator ports
+- [ ] Starting VNC server configures x11vnc with optional password
+- [ ] Starting VNC web proxy runs noVNC when enabled
+- [ ] CLI provides a share command for log sharing HTTP server
+- [ ] Log server lists available log files and serves them on request
+- [ ] Invalid device type raises appropriate error message

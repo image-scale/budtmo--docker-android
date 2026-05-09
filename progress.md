@@ -27,3 +27,10 @@
 **Commit**: Add Genymotion AWS integration for deploying Android devices on AWS infrastructure using Terraform
 **Acceptance**: 11/11 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 5
+**Task**: Task 5 — Application process manager
+**Files created**: src/android_runner/process.py, tests/test_process.py
+**Commit**: Add a process runner for managing background services and applications
+**Acceptance**: 5/5 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
