@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "android-runner"
+version = "0.1.0"
+description = "CLI for managing Android emulators and cloud devices in Docker"
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.0",
+    "requests>=2.25",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "mock>=5.0",
+]
+
+[project.scripts]
+android-runner = "android_runner.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
