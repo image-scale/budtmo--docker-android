@@ -1,3 +1,8 @@
 # Progress
 
-(Updated after each feature commit.)
+## Round 1
+**Task**: Task 1 — Helper utilities for environment variables, string conversion, and symlinks
+**Files created**: src/android_runner/__init__.py, src/android_runner/utils.py, tests/test_utils.py, pyproject.toml
+**Commit**: Add utility functions for environment variable handling, string-to-boolean conversion, and symbolic link creation
+**Acceptance**: 10/10 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
