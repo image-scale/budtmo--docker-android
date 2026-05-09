@@ -49,14 +49,23 @@
 ## Task 4: Genymotion AWS integration
 
 ### Acceptance Criteria
-- [ ] Uses existing AWS credentials directory when present
-- [ ] Creates credentials from template when directory doesn't exist
-- [ ] Replaces placeholders in credentials template with actual keys
-- [ ] Generates SSH key pair for instance access
-- [ ] Generates Terraform configuration with security group from template
-- [ ] Generates Terraform configuration with custom ingress/egress rules
-- [ ] Assigns unique ADB ports to each created device
-- [ ] Runs terraform init, plan, and apply to deploy infrastructure
-- [ ] Creates SSH tunnel for ADB connection to each device
-- [ ] Destroys terraform resources on shutdown
-- [ ] Cleans up temporary credentials on logout
+- [x] Uses existing AWS credentials directory when present
+- [x] Creates credentials from template when directory doesn't exist
+- [x] Replaces placeholders in credentials template with actual keys
+- [x] Generates SSH key pair for instance access
+- [x] Generates Terraform configuration with security group from template
+- [x] Generates Terraform configuration with custom ingress/egress rules
+- [x] Assigns unique ADB ports to each created device
+- [x] Runs terraform init, plan, and apply to deploy infrastructure
+- [x] Creates SSH tunnel for ADB connection to each device
+- [x] Destroys terraform resources on shutdown
+- [x] Cleans up temporary credentials on logout
+
+## Task 5: Application process manager
+
+### Acceptance Criteria
+- [ ] Creates application with name, command, and optional args
+- [ ] Starts application without UI by executing command directly
+- [ ] Starts application with UI by wrapping in xterm
+- [ ] Application can represent different service types (Appium, VNC, etc.)
+- [ ] String representation includes all configuration details

@@ -3,6 +3,7 @@ from android_runner.device import BaseDevice, DeviceKind
 from android_runner.emulator import AndroidEmulator
 from android_runner.genymotion_saas import GenymotionBase, GenymotionSaas
 from android_runner.genymotion_aws import GenymotionAws
+from android_runner.process import ProcessRunner, ServiceKind
 
 __all__ = [
     "str_to_bool",
@@ -14,4 +15,6 @@ __all__ = [
     "GenymotionBase",
     "GenymotionSaas",
     "GenymotionAws",
+    "ProcessRunner",
+    "ServiceKind",
 ]
