@@ -9,4 +9,4 @@ Build the CLI from the inside out: start with the core device management feature
 - [x] Task 3: Implement the Genymotion SaaS integration that handles authentication (via token or credentials), reads device templates from JSON, creates instances in parallel, connects via ADB, and provides cleanup on shutdown.
 - [x] Task 4: Implement the Genymotion AWS integration that manages AWS credentials, generates Terraform configurations for deploying Genymotion devices, handles SSH key creation, deploys infrastructure, and connects via local ADB tunnels.
 - [x] Task 5: Build the application process manager that can start external programs with optional xterm UI, supporting services like Appium, VNC server, display managers, and port forwarders.
-- [>] Task 6: Create the main CLI with Click commands for starting devices, Appium, display services, VNC server/web, port forwarder, and a log sharing HTTP server.
+- [x] Task 6: Create the main CLI with Click commands for starting devices, Appium, display services, VNC server/web, port forwarder, and a log sharing HTTP server.

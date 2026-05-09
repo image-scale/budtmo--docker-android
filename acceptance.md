@@ -73,14 +73,14 @@
 ## Task 6: Main CLI with Click commands
 
 ### Acceptance Criteria
-- [ ] CLI provides a start command group with service choices
-- [ ] Starting Appium service reads config from environment and starts the process
-- [ ] Starting device creates and runs the appropriate device type based on environment
-- [ ] Starting display screen configures Xvfb with screen settings from environment
-- [ ] Starting display window manager runs openbox session
-- [ ] Starting port forwarder sets up socat tunnels for emulator ports
-- [ ] Starting VNC server configures x11vnc with optional password
-- [ ] Starting VNC web proxy runs noVNC when enabled
-- [ ] CLI provides a share command for log sharing HTTP server
-- [ ] Log server lists available log files and serves them on request
-- [ ] Invalid device type raises appropriate error message
+- [x] CLI provides a start command group with service choices
+- [x] Starting Appium service reads config from environment and starts the process
+- [x] Starting device creates and runs the appropriate device type based on environment
+- [x] Starting display screen configures Xvfb with screen settings from environment
+- [x] Starting display window manager runs openbox session
+- [x] Starting port forwarder sets up socat tunnels for emulator ports
+- [x] Starting VNC server configures x11vnc with optional password
+- [x] Starting VNC web proxy runs noVNC when enabled
+- [x] CLI provides a share command for log sharing HTTP server
+- [x] Log server lists available log files and serves them on request
+- [x] Invalid device type raises appropriate error message
